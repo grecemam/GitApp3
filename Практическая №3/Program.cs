@@ -5,10 +5,9 @@ namespace Практическая__3
     internal class Program3
     {
         static void Main()
-        {
+        { while (true)
             {
-                Console.WriteLine(
-                    "Переключение между октавами F4 и F5");
+                Console.WriteLine("\nПереключение между октавами F4 и F5" + "\nдля выхода нажмите 'Enter'");
                 ConsoleKeyInfo x = Console.ReadKey();
                 if (x.Key == ConsoleKey.F5)
                 {
@@ -18,7 +17,7 @@ namespace Практическая__3
                 {
                     Second();
                 }
-                else
+                else if (x.Key == ConsoleKey.Enter)
                 {
                     Environment.Exit(0);
                 }
@@ -102,7 +101,7 @@ namespace Практическая__3
                     }
                     if (a.Key == ConsoleKey.Tab) 
                     {
-                    Main();
+                     break;
                     }
                 } while (a.Key != ConsoleKey.Escape);
             }
@@ -113,6 +112,7 @@ namespace Практическая__3
         }
         static void Second()
         {
+            Console.Clear();
             Console.WriteLine("4 октава");
             int[] ok4 = { 261, 277, 293, 311, 329, 349, 369, 392, 415, 440, 466, 493 };
             n(ok4);
@@ -129,66 +129,65 @@ namespace Практическая__3
                         cb = h[0];
                         nota(cb);
                     }
-                    if (a.Key == ConsoleKey.B)
+                    else if (a.Key == ConsoleKey.B)
                     {
                         cb = h[1];
                         nota(cb);
                     }
-                    if (a.Key == ConsoleKey.C)
+                    else if (a.Key == ConsoleKey.C)
                     {
                         cb = h[2];
                         nota(cb);
                     }
-                    if (a.Key == ConsoleKey.D)
+                    else if (a.Key == ConsoleKey.D)
                     {
                         cb = h[3];
                         nota(cb);
                     }
-                    if (a.Key == ConsoleKey.E)
+                    else if (a.Key == ConsoleKey.E)
                     {
                         cb = h[4];
                         nota(cb);
                     }
-                    if (a.Key == ConsoleKey.F)
+                    else if (a.Key == ConsoleKey.F)
                     {
                         cb = h[5];
                         nota(cb);
                     }
-                    if (a.Key == ConsoleKey.G)
+                    else if (a.Key == ConsoleKey.G)
                     {
                         cb = h[6];
                         nota(cb);
                     }
-                    if (a.Key == ConsoleKey.H)
+                    else if (a.Key == ConsoleKey.H)
                     {
                         cb = h[7];
                         nota(cb);
                     }
-                    if (a.Key == ConsoleKey.W)
+                    else if (a.Key == ConsoleKey.W)
                     {
                         cb = h[8];
                         nota(cb);
                     }
-
-                    if (a.Key == ConsoleKey.Z)
+                    else if (a.Key == ConsoleKey.Z)
                     {
                         cb = h[9];
                         nota(cb);
                     }
 
-                    if (a.Key == ConsoleKey.T)
+                    else if (a.Key == ConsoleKey.T)
                     {
                         cb = h[10];
                         nota(cb);
                     }
-                    if (a.Key == ConsoleKey.P)
+                    else if (a.Key == ConsoleKey.P)
                     {
                         cb = h[11];
                         nota(cb);
                     }
                     if (a.Key == ConsoleKey.Tab)
                     {
-                        Main();
+                       break;
                     }
                 } while (a.Key != ConsoleKey.Escape);
             }
